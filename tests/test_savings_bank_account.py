@@ -4,11 +4,11 @@ from bank_accounts_tutorial.savings_account import SavingsAccount
 PIN = "1234"
 
 
-def test_valid_pin(saving_bank_account):
+def test_valid_pin_increase(saving_bank_account):
     saving_bank_account.increase(PIN, 30)
 
 
-def test_invalid_pin(saving_bank_account):
+def test_invalid_pin_increase(saving_bank_account):
     with pytest.raises(RuntimeError) as excinfo:
         # Act
         saving_bank_account.increase("1111", 100)
