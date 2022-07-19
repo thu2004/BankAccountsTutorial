@@ -1,5 +1,9 @@
 # BankAccountsTutorial
 
+## Install the python modules
+
+pip install -r requirements.txt
+
 ## VS Code extensions
 
 Please install following extensions
